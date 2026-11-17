@@ -1,0 +1,63 @@
+{
+  "setup": {
+    "train_scenes": 4000,
+    "test_scenes": 300,
+    "image": "64x64",
+    "epochs": 25,
+    "params": 1928549,
+    "device": "cpu",
+    "train_seconds": 2115.6
+  },
+  "model": {
+    "abs_rel": 0.07708893716335297,
+    "rmse": 0.581342875957489,
+    "delta_1.25": 0.9768343098958333,
+    "pixel_acc": 0.99649658203125,
+    "miou": 0.9729971254874806,
+    "per_class_iou": [
+      0.9989095070778249,
+      0.9965627078483539,
+      0.9482118758434548,
+      0.9483044111802887
+    ],
+    "chamfer_3d": 0.37122916714357224,
+    "depth_by_class": {
+      "wall": {
+        "abs_rel": 0.0751,
+        "signed_bias": 0.0183
+      },
+      "floor": {
+        "abs_rel": 0.0723,
+        "signed_bias": 0.0098
+      },
+      "sphere": {
+        "abs_rel": 0.1027,
+        "signed_bias": 0.0372
+      },
+      "box": {
+        "abs_rel": 0.1052,
+        "signed_bias": 0.0236
+      }
+    }
+  },
+  "baseline_mean_depth_majority_class": {
+    "abs_rel": 0.16089938580989838,
+    "rmse": 1.0565053224563599,
+    "delta_1.25": 0.8170751953125,
+    "pixel_acc": 0.88768310546875,
+    "miou": 0.4320050989319014,
+    "per_class_iou": [
+      0.9144861770275792,
+      0.8135342187000264,
+      0.0,
+      0.0
+    ],
+    "chamfer_3d": 0.550203016631548
+  },
+  "classes": [
+    "wall",
+    "floor",
+    "sphere",
+    "box"
+  ]
+}
